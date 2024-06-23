@@ -1,0 +1,401 @@
+---
+title: Citi-camunda overview
+---
+The Citi-camunda repo is an open-source platform for workflow and process automation. It's built on Camunda Platform 7, which provides a native BPMN 2.0 process engine that runs inside the Java Virtual Machine. This platform can be embedded inside any Java application and any Runtime Container. It includes components for process implementation and execution, process design, process operations, and human task management. The platform is highly integrable and embeddable.
+
+- <SwmLink doc-title="Api">[Api](.swm/api.986tznu1.sw.md)</SwmLink>
+- <SwmLink doc-title="Getting started">[Getting started](.swm/getting-started.s0marilp.sw.md)</SwmLink>
+
+## Modules
+
+### Frontend UI
+
+- <SwmLink doc-title="Introduction to frontend ui">[Introduction to frontend ui](.swm/introduction-to-frontend-ui.pn9dvnzw.sw.md)</SwmLink>
+- <SwmLink doc-title="Starting processes in camunda">[Starting processes in camunda](.swm/starting-processes-in-camunda.79hqgko0.sw.md)</SwmLink>
+- <SwmLink doc-title="Generating demo data for the camunda platform">[Generating demo data for the camunda platform](.swm/generating-demo-data-for-the-camunda-platform.4o1hetxa.sw.md)</SwmLink>
+- <SwmLink doc-title="Introduction to the tasklist feature">[Introduction to the tasklist feature](.swm/introduction-to-the-tasklist-feature.ak39pd1p.sw.md)</SwmLink>
+- <SwmLink doc-title="Exploring the cockpit component">[Exploring the cockpit component](.swm/exploring-the-cockpit-component.6kerccsj.sw.md)</SwmLink>
+- <SwmLink doc-title="Understanding the admin functionality">[Understanding the admin functionality](.swm/understanding-the-admin-functionality.m828vhl3.sw.md)</SwmLink>
+- <SwmLink doc-title="Understanding the welcome module">[Understanding the welcome module](.swm/understanding-the-welcome-module.9rczg1ck.sw.md)</SwmLink>
+- **Tasklist Plugins**
+  - <SwmLink doc-title="Getting started with tasklist plugins">[Getting started with tasklist plugins](.swm/getting-started-with-tasklist-plugins.zktbosym.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the tasklist card">[Understanding the tasklist card](.swm/understanding-the-tasklist-card.i7m7gj8o.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to tasklist sorting">[Introduction to tasklist sorting](.swm/introduction-to-tasklist-sorting.pwfemy4r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of standalone task">[Basic concepts of standalone task](.swm/basic-concepts-of-standalone-task.v07e4grg.sw.md)</SwmLink>
+- **Tasklist Client**
+  - <SwmLink doc-title="Exploring the tasklist client">[Exploring the tasklist client](.swm/exploring-the-tasklist-client.na3ebzue.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to tasklist controller">[Introduction to tasklist controller](.swm/introduction-to-tasklist-controller.8mj07h8m.sw.md)</SwmLink>
+  - <SwmLink doc-title="Getting started with tasklist configuration">[Getting started with tasklist configuration](.swm/getting-started-with-tasklist-configuration.cn955oah.sw.md)</SwmLink>
+  - <SwmLink doc-title="Getting started with tasklist filter">[Getting started with tasklist filter](.swm/getting-started-with-tasklist-filter.g83jc23u.sw.md)</SwmLink>
+  - <SwmLink doc-title="Exploring the tasklist form">[Exploring the tasklist form](.swm/exploring-the-tasklist-form.xw7zdnkr.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the tasklist task component">[Understanding the tasklist task component](.swm/understanding-the-tasklist-task-component.26szdstm.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding tasklist navigation">[Understanding tasklist navigation](.swm/understanding-tasklist-navigation.e6gx5n7g.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding process plugins">[Understanding process plugins](.swm/understanding-process-plugins.v8xab9md.sw.md)</SwmLink>
+  - <SwmLink doc-title="An overview of navigation controllers">[An overview of navigation controllers](.swm/an-overview-of-navigation-controllers.g3q7k9v3.sw.md)</SwmLink>
+  - <SwmLink doc-title="Overview of shortcut plugins">[Overview of shortcut plugins](.swm/overview-of-shortcut-plugins.6ork30zb.sw.md)</SwmLink>
+- **Cockpit UI Dashboard**
+  - <SwmLink doc-title="Introduction to cockpit ui dashboard">[Introduction to cockpit ui dashboard](.swm/introduction-to-cockpit-ui-dashboard.vq5dgxxj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to the dashboard">[Introduction to the dashboard](.swm/introduction-to-the-dashboard.6dh9j24g.sw.md)</SwmLink>
+  - **Plugins**
+    - <SwmLink doc-title="Understanding the role of plugins">[Understanding the role of plugins](.swm/understanding-the-role-of-plugins.vast8fmj.sw.md)</SwmLink>
+    - <SwmLink doc-title="Guide to integrating new plugins into citi camunda">[Guide to integrating new plugins into citi camunda](.swm/guide-to-integrating-new-plugins-into-citi-camunda.veq4wtki.sw.md)</SwmLink>
+- **Cockpit UI Process Definition**
+  - <SwmLink doc-title="Introduction to cockpit ui process definition">[Introduction to cockpit ui process definition](.swm/introduction-to-cockpit-ui-process-definition.8j8nm8ms.sw.md)</SwmLink>
+  - <SwmLink doc-title="Getting started with process definition">[Getting started with process definition](.swm/getting-started-with-process-definition.v1lwyb09.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to job definition">[Introduction to job definition](.swm/introduction-to-job-definition.a194orj2.sw.md)</SwmLink>
+  - <SwmLink doc-title="Overview of base process definition">[Overview of base process definition](.swm/overview-of-base-process-definition.oijwsp1r.sw.md)</SwmLink>
+- **Cockpit UI Process Instance**
+  - <SwmLink doc-title="Introduction to cockpit ui process instance">[Introduction to cockpit ui process instance](.swm/introduction-to-cockpit-ui-process-instance.5us9p3hq.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to process instances">[Introduction to process instances](.swm/introduction-to-process-instances.prmjzp0r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the cockpit ui">[Understanding the cockpit ui](.swm/understanding-the-cockpit-ui.kturw991.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of plugins">[Basic concepts of plugins](.swm/basic-concepts-of-plugins.draklv5a.sw.md)</SwmLink>
+- **Cockpit UI Decision List**
+  - <SwmLink doc-title="Basic concepts of the cockpit ui decision list">[Basic concepts of the cockpit ui decision list](.swm/basic-concepts-of-the-cockpit-ui-decision-list.i1w6dceg.sw.md)</SwmLink>
+  - <SwmLink doc-title="Getting started with decision lists">[Getting started with decision lists](.swm/getting-started-with-decision-lists.tpn3uwzk.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the decision instance in camunda">[Understanding the decision instance in camunda](.swm/understanding-the-decision-instance-in-camunda.2xbd88vz.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding decision definition">[Understanding decision definition](.swm/understanding-decision-definition.hibrawc8.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to the dashboard">[Introduction to the dashboard](.swm/introduction-to-the-dashboard.waogobbw.sw.md)</SwmLink>
+- **Cockpit UI Job Definition**
+  - <SwmLink doc-title="Exploring the cockpit ui job definition">[Exploring the cockpit ui job definition](.swm/exploring-the-cockpit-ui-job-definition.7607yygx.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to job suspension">[Introduction to job suspension](.swm/introduction-to-job-suspension.tansokss.sw.md)</SwmLink>
+  - <SwmLink doc-title="Exploring the job definition table">[Exploring the job definition table](.swm/exploring-the-job-definition-table.szocqiln.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the job definition suspension overlay">[Understanding the job definition suspension overlay](.swm/understanding-the-job-definition-suspension-overlay.euuvxdbu.sw.md)</SwmLink>
+- **Cockpit UI Tasks**
+  - <SwmLink doc-title="Understanding cockpit ui tasks">[Understanding cockpit ui tasks](.swm/understanding-cockpit-ui-tasks.96visn4p.sw.md)</SwmLink>
+  - <SwmLink doc-title="Exploration of cockpit ui components">[Exploration of cockpit ui components](.swm/exploration-of-cockpit-ui-components.waswar5g.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding task management">[Understanding task management](.swm/understanding-task-management.5na5eozq.sw.md)</SwmLink>
+- **Cockpit Client Scripts**
+  - <SwmLink doc-title="Understanding cockpit client scripts">[Understanding cockpit client scripts](.swm/understanding-cockpit-client-scripts.tvxefv0w.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of reports">[Basic concepts of reports](.swm/basic-concepts-of-reports.pd5o4zfh.sw.md)</SwmLink>
+  - <SwmLink doc-title="Exploration of services">[Exploration of services](.swm/exploration-of-services.ed1xecht.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding pages in citi camunda">[Understanding pages in citi camunda](.swm/understanding-pages-in-citi-camunda.z1uo1va4.sw.md)</SwmLink>
+  - <SwmLink doc-title="Overview of processes in citi camunda">[Overview of processes in citi camunda](.swm/overview-of-processes-in-citi-camunda.zg1tg63k.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding components in citi camunda">[Understanding components in citi camunda](.swm/understanding-components-in-citi-camunda.tlndl4yb.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of repository in citi camunda">[Basic concepts of repository in citi camunda](.swm/basic-concepts-of-repository-in-citi-camunda.x2hutn6q.sw.md)</SwmLink>
+  - **Resources**
+    - <SwmLink doc-title="Getting started with resources in citi camunda">[Getting started with resources in citi camunda](.swm/getting-started-with-resources-in-citi-camunda.k8rnlxmv.sw.md)</SwmLink>
+    - <SwmLink doc-title="Diving deeper into the file structure of the resources component">[Diving deeper into the file structure of the resources component](.swm/diving-deeper-into-the-file-structure-of-the-resources-component.18qnyao5.sw.md)</SwmLink>
+    - <SwmLink doc-title="Role of the isarray property in resource responses">[Role of the isarray property in resource responses](.swm/role-of-the-isarray-property-in-resource-responses.t9u0mbf8.sw.md)</SwmLink>
+- **Cockpit Client Styles**
+  - <SwmLink doc-title="Introduction to cockpit client styles">[Introduction to cockpit client styles](.swm/introduction-to-cockpit-client-styles.ykfy9zbt.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the role of pages in styling">[Understanding the role of pages in styling](.swm/understanding-the-role-of-pages-in-styling.6zkcg37r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of directives in citi camunda">[Basic concepts of directives in citi camunda](.swm/basic-concepts-of-directives-in-citi-camunda.4xtrwuzd.sw.md)</SwmLink>
+- **Admin UI**
+  - <SwmLink doc-title="Introduction to admin ui">[Introduction to admin ui](.swm/introduction-to-admin-ui.qisfbm6o.sw.md)</SwmLink>
+  - <SwmLink doc-title="Handling user permissions group roles and authorizations on client side">[Handling user permissions group roles and authorizations on client side](.swm/handling-user-permissions-group-roles-and-authorizations-on-client-side.jeewp76e.sw.md)</SwmLink>
+- **Admin Plugins**
+  - <SwmLink doc-title="Understanding admin plugins">[Understanding admin plugins](.swm/understanding-admin-plugins.kfz8ror5.sw.md)</SwmLink>
+  - <SwmLink doc-title="Overview of user management">[Overview of user management](.swm/overview-of-user-management.5supe3cf.sw.md)</SwmLink>
+  - <SwmLink doc-title="Introduction to system metrics in citi camunda">[Introduction to system metrics in citi camunda](.swm/introduction-to-system-metrics-in-citi-camunda.6ovcnnmn.sw.md)</SwmLink>
+  - **Authorizations**
+    - <SwmLink doc-title="Understanding authorizations">[Understanding authorizations](.swm/understanding-authorizations.lm3lm0zq.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding authorizationresource implementation and usage">[Understanding authorizationresource implementation and usage](.swm/understanding-authorizationresource-implementation-and-usage.wwdvwxlu.sw.md)</SwmLink>
+- **Admin Client**
+  - <SwmLink doc-title="Overview of the admin client">[Overview of the admin client](.swm/overview-of-the-admin-client.nx8szrt1.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of user management">[Basic concepts of user management](.swm/basic-concepts-of-user-management.bt5agxik.sw.md)</SwmLink>
+  - <SwmLink doc-title="Exploring group management in citi camunda">[Exploring group management in citi camunda](.swm/exploring-group-management-in-citi-camunda.wnfsvbmt.sw.md)</SwmLink>
+  - <SwmLink doc-title="Basic concepts of tenant management">[Basic concepts of tenant management](.swm/basic-concepts-of-tenant-management.kaoukcnd.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding system settings">[Understanding system settings](.swm/understanding-system-settings.dxf1m8fs.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding execution metrics">[Understanding execution metrics](.swm/understanding-execution-metrics.e88svei9.sw.md)</SwmLink>
+  - <SwmLink doc-title="Overview of analytics">[Overview of analytics](.swm/overview-of-analytics.ym45fpvi.sw.md)</SwmLink>
+
+### Backend Engine
+
+- <SwmLink doc-title="Overview of the backend engine">[Overview of the backend engine](.swm/overview-of-the-backend-engine.xj3xf1p9.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in engine spring">[Maven configuration in engine spring](.swm/maven-configuration-in-engine-spring.odd7vi4f.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in camunda platform engine">[Maven configuration in camunda platform engine](.swm/maven-configuration-in-camunda-platform-engine.1e5rny1b.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in engine pluginsspin plugin">[Maven configuration in engine pluginsspin plugin](.swm/maven-configuration-in-engine-pluginsspin-plugin.veaikx88.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven usage in engine plugins">[Maven usage in engine plugins](.swm/maven-usage-in-engine-plugins.x5ufthop.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration and usage in engine pluginsidentity ldap">[Maven configuration and usage in engine pluginsidentity ldap](.swm/maven-configuration-and-usage-in-engine-pluginsidentity-ldap.clcyqfbi.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven usage in engine pluginsconnect plugin">[Maven usage in engine pluginsconnect plugin](.swm/maven-usage-in-engine-pluginsconnect-plugin.ykrep91q.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven usage in engine cdi module">[Maven usage in engine cdi module](.swm/maven-usage-in-engine-cdi-module.g0gvifgm.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in engine rest">[Maven configuration in engine rest](.swm/maven-configuration-in-engine-rest.976xvdpb.sw.md)</SwmLink>
+- <SwmLink doc-title="Deploymentoperationstep class overview">[Deploymentoperationstep class overview](.swm/deploymentoperationstep-class-overview.glk1b.sw.md)</SwmLink>
+- <SwmLink doc-title="Understanding the spin plugin">[Understanding the spin plugin](.swm/understanding-the-spin-plugin.gswoktu2.sw.md)</SwmLink>
+- <SwmLink doc-title="Exploring the connect plugin">[Exploring the connect plugin](.swm/exploring-the-connect-plugin.hr6x7uts.sw.md)</SwmLink>
+- **Engine Core**
+  - <SwmLink doc-title="Introduction to the engine core">[Introduction to the engine core](.swm/introduction-to-the-engine-core.pgc0ll72.sw.md)</SwmLink>
+  - <SwmLink doc-title="Handling and processing history events">[Handling and processing history events](.swm/handling-and-processing-history-events.gqd2fheu.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task creation and assignment process">[Task creation and assignment process](.swm/task-creation-and-assignment-process.i67mzdpd.sw.md)</SwmLink>
+  - <SwmLink doc-title="User task execution process">[User task execution process](.swm/user-task-execution-process.ueo4zmdb.sw.md)</SwmLink>
+  - <SwmLink doc-title="Updating suspension state in camunda bpm engine">[Updating suspension state in camunda bpm engine](.swm/updating-suspension-state-in-camunda-bpm-engine.hfh0ke4n.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task delegation in camunda bpmn engine">[Task delegation in camunda bpmn engine](.swm/task-delegation-in-camunda-bpmn-engine.ci5aw97t.sw.md)</SwmLink>
+  - <SwmLink doc-title="Completeenginesrcmainjavaorgcamundabpmengineimplpersistenceentitytaskentityjava">[Completeenginesrcmainjavaorgcamundabpmengineimplpersistenceentitytaskentityjava](.swm/completeenginesrcmainjavaorgcamundabpmengineimplpersistenceentitytaskentityjava.622zfmtb.sw.md)</SwmLink>
+  - <SwmLink doc-title="Manual task completion process">[Manual task completion process](.swm/manual-task-completion-process.l4xm942v.sw.md)</SwmLink>
+  - <SwmLink doc-title="Batch job execution process">[Batch job execution process](.swm/batch-job-execution-process.2xj7r5qj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task saving process">[Task saving process](.swm/task-saving-process.gxqs6enk.sw.md)</SwmLink>
+  - <SwmLink doc-title="Job retry handling in bpmn engine">[Job retry handling in bpmn engine](.swm/job-retry-handling-in-bpmn-engine.cz6iposj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process instance migration in camunda">[Process instance migration in camunda](.swm/process-instance-migration-in-camunda.ikol9v69.sw.md)</SwmLink>
+  - <SwmLink doc-title="Rendering of start forms">[Rendering of start forms](.swm/rendering-of-start-forms.4n3zg98v.sw.md)</SwmLink>
+  - <SwmLink doc-title="Restarting process instances flow">[Restarting process instances flow](.swm/restarting-process-instances-flow.5f2zuz90.sw.md)</SwmLink>
+  - <SwmLink doc-title="Bpmn process deployment in camunda">[Bpmn process deployment in camunda](.swm/bpmn-process-deployment-in-camunda.ucmlxv0v.sw.md)</SwmLink>
+  - <SwmLink doc-title="Suspension state update process">[Suspension state update process](.swm/suspension-state-update-process.wo5avjbc.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task delegation and authorization">[Task delegation and authorization](.swm/task-delegation-and-authorization.0eorap86.sw.md)</SwmLink>
+  - <SwmLink doc-title="Job suspension state update process">[Job suspension state update process](.swm/job-suspension-state-update-process.r9lvo3gr.sw.md)</SwmLink>
+  - <SwmLink doc-title="Execution of the history cleanup command">[Execution of the history cleanup command](.swm/execution-of-the-history-cleanup-command.ydenh0f8.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task form rendering process">[Task form rendering process](.swm/task-form-rendering-process.r3ikh2vj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Attachment creation in camunda">[Attachment creation in camunda](.swm/attachment-creation-in-camunda.qcwselcp.sw.md)</SwmLink>
+  - <SwmLink doc-title="Bpmn deployment in camunda">[Bpmn deployment in camunda](.swm/bpmn-deployment-in-camunda.aocwre3r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Adding a comment process">[Adding a comment process](.swm/adding-a-comment-process.4cjvt7yt.sw.md)</SwmLink>
+  - <SwmLink doc-title="Form data rendering">[Form data rendering](.swm/form-data-rendering.yqj8o5o8.sw.md)</SwmLink>
+  - <SwmLink doc-title="Failed external task handling">[Failed external task handling](.swm/failed-external-task-handling.gm9dvq39.sw.md)</SwmLink>
+  - <SwmLink doc-title="Timer job execution process">[Timer job execution process](.swm/timer-job-execution-process.a40oupnn.sw.md)</SwmLink>
+  - <SwmLink doc-title="Batch job execution process">[Batch job execution process](.swm/batch-job-execution-process.z3wancqq.sw.md)</SwmLink>
+  - <SwmLink doc-title="Updating suspension state in camunda bpmn engine">[Updating suspension state in camunda bpmn engine](.swm/updating-suspension-state-in-camunda-bpmn-engine.h5xeolr9.sw.md)</SwmLink>
+  - <SwmLink doc-title="Adding a group identity link process">[Adding a group identity link process](.swm/adding-a-group-identity-link-process.itoyuhmb.sw.md)</SwmLink>
+  - <SwmLink doc-title="Adding a user identity link in camunda platform">[Adding a user identity link in camunda platform](.swm/adding-a-user-identity-link-in-camunda-platform.aogp5gdf.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deletion of a candidate group">[Deletion of a candidate group](.swm/deletion-of-a-candidate-group.blc2i9js.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deleting a candidate user process">[Deleting a candidate user process](.swm/deleting-a-candidate-user-process.n46fht06.sw.md)</SwmLink>
+  - <SwmLink doc-title="User information management process">[User information management process](.swm/user-information-management-process.82wld18r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Service task execution process">[Service task execution process](.swm/service-task-execution-process.jynoeukr.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deleting process definitions in bpm engine">[Deleting process definitions in bpm engine](.swm/deleting-process-definitions-in-bpm-engine.zozsjj7n.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process instance migration in bpm engine">[Process instance migration in bpm engine](.swm/process-instance-migration-in-bpm-engine.bfuex22d.sw.md)</SwmLink>
+  - <SwmLink doc-title="Database operations flow">[Database operations flow](.swm/database-operations-flow.0mdsjp41.sw.md)</SwmLink>
+  - <SwmLink doc-title="Execution entity management in camunda bpm engine">[Execution entity management in camunda bpm engine](.swm/execution-entity-management-in-camunda-bpm-engine.lbtxg41n.sw.md)</SwmLink>
+  - <SwmLink doc-title="Decision table evaluation process">[Decision table evaluation process](.swm/decision-table-evaluation-process.9it48puf.sw.md)</SwmLink>
+  - <SwmLink doc-title="Decision evaluation process">[Decision evaluation process](.swm/decision-evaluation-process.24hzjgr2.sw.md)</SwmLink>
+  - <SwmLink doc-title="Incident handling in bpm engine">[Incident handling in bpm engine](.swm/incident-handling-in-bpm-engine.5k47k2ub.sw.md)</SwmLink>
+  - <SwmLink doc-title="Start condition evaluation in bpmn engine">[Start condition evaluation in bpmn engine](.swm/start-condition-evaluation-in-bpmn-engine.zl63lww9.sw.md)</SwmLink>
+  - <SwmLink doc-title="User operation logging process">[User operation logging process](.swm/user-operation-logging-process.gsxlpu0v.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process of saving filters">[Process of saving filters](.swm/process-of-saving-filters.rwt6p19g.sw.md)</SwmLink>
+  - <SwmLink doc-title="Adding a model instance process">[Adding a model instance process](.swm/adding-a-model-instance-process.aku3i5er.sw.md)</SwmLink>
+  - <SwmLink doc-title="Attachment deletion process in camunda bpmn engine">[Attachment deletion process in camunda bpmn engine](.swm/attachment-deletion-process-in-camunda-bpmn-engine.g6hlkbyq.sw.md)</SwmLink>
+  - <SwmLink doc-title="Timer job migration process">[Timer job migration process](.swm/timer-job-migration-process.0c67gzl3.sw.md)</SwmLink>
+  - <SwmLink doc-title="Xml data transformation process">[Xml data transformation process](.swm/xml-data-transformation-process.fzly0avb.sw.md)</SwmLink>
+  - <SwmLink doc-title="Job due date recalculation process">[Job due date recalculation process](.swm/job-due-date-recalculation-process.umxglt48.sw.md)</SwmLink>
+  - <SwmLink doc-title="Xml data and case definition transformation process">[Xml data and case definition transformation process](.swm/xml-data-and-case-definition-transformation-process.yri1eniz.sw.md)</SwmLink>
+  - <SwmLink doc-title="Historical data cleanup process">[Historical data cleanup process](.swm/historical-data-cleanup-process.2vyavnxy.sw.md)</SwmLink>
+  - <SwmLink doc-title="Timer configuration and execution flow">[Timer configuration and execution flow](.swm/timer-configuration-and-execution-flow.lph6bag4.sw.md)</SwmLink>
+  - <SwmLink doc-title="Execution of a filters single result">[Execution of a filters single result](.swm/execution-of-a-filters-single-result.nrmqnrzr.sw.md)</SwmLink>
+  - <SwmLink doc-title="Execution of filter list process">[Execution of filter list process](.swm/execution-of-filter-list-process.g7tmqdyd.sw.md)</SwmLink>
+  - <SwmLink doc-title="Execution of filter list page command">[Execution of filter list page command](.swm/execution-of-filter-list-page-command.ekv3vk4c.sw.md)</SwmLink>
+  - <SwmLink doc-title="Writing a cmmn model to a file">[Writing a cmmn model to a file](.swm/writing-a-cmmn-model-to-a-file.cdlizs0r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Dmn model writing process">[Dmn model writing process](.swm/dmn-model-writing-process.prm196s6.sw.md)</SwmLink>
+  - <SwmLink doc-title="Writing a bpmn model to a file">[Writing a bpmn model to a file](.swm/writing-a-bpmn-model-to-a-file.bfox415g.sw.md)</SwmLink>
+  - <SwmLink doc-title="Conversion of cmmn model instance to string">[Conversion of cmmn model instance to string](.swm/conversion-of-cmmn-model-instance-to-string.egrcualt.sw.md)</SwmLink>
+  - <SwmLink doc-title="Writing a dmn model to a stream">[Writing a dmn model to a stream](.swm/writing-a-dmn-model-to-a-stream.x9hwfz5p.sw.md)</SwmLink>
+  - <SwmLink doc-title="Dmn model instance to string conversion">[Dmn model instance to string conversion](.swm/dmn-model-instance-to-string-conversion.l273tv2k.sw.md)</SwmLink>
+  - <SwmLink doc-title="Writing a bpmn model to a stream">[Writing a bpmn model to a stream](.swm/writing-a-bpmn-model-to-a-stream.5q8qkvcy.sw.md)</SwmLink>
+  - <SwmLink doc-title="Bpmn model instance to string conversion">[Bpmn model instance to string conversion](.swm/bpmn-model-instance-to-string-conversion.dqtf9j7m.sw.md)</SwmLink>
+  - <SwmLink doc-title="Batch variable setting in process instances">[Batch variable setting in process instances](.swm/batch-variable-setting-in-process-instances.u3tn8wup.sw.md)</SwmLink>
+  - <SwmLink doc-title="Decision evaluation history recording">[Decision evaluation history recording](.swm/decision-evaluation-history-recording.al3hf39d.sw.md)</SwmLink>
+  - <SwmLink doc-title="Case definitions transformation process">[Case definitions transformation process](.swm/case-definitions-transformation-process.0vfu7n67.sw.md)</SwmLink>
+  - <SwmLink doc-title="Correlation of all messages in a batch">[Correlation of all messages in a batch](.swm/correlation-of-all-messages-in-a-batch.jr9fd6p9.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process instance deletion flow">[Process instance deletion flow](.swm/process-instance-deletion-flow.ctvfymdk.sw.md)</SwmLink>
+  - <SwmLink doc-title="Message correlation in camunda bpmn engine">[Message correlation in camunda bpmn engine](.swm/message-correlation-in-camunda-bpmn-engine.syjso6cj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Job creation and identity link event generation">[Job creation and identity link event generation](.swm/job-creation-and-identity-link-event-generation.1f0q85no.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deletion of a process instance in camunda">[Deletion of a process instance in camunda](.swm/deletion-of-a-process-instance-in-camunda.0wdptqxx.sw.md)</SwmLink>
+  - <SwmLink doc-title="Handling elements in the camunda bpmn engine">[Handling elements in the camunda bpmn engine](.swm/handling-elements-in-the-camunda-bpmn-engine.eh0m1xmy.sw.md)</SwmLink>
+  - <SwmLink doc-title="Incident annotation process">[Incident annotation process](.swm/incident-annotation-process.otjf31x3.sw.md)</SwmLink>
+  - <SwmLink doc-title="Timer initialization and scheduling process">[Timer initialization and scheduling process](.swm/timer-initialization-and-scheduling-process.84m6pmjg.sw.md)</SwmLink>
+  - <SwmLink doc-title="Job execution process in bpm engine">[Job execution process in bpm engine](.swm/job-execution-process-in-bpm-engine.oa416bon.sw.md)</SwmLink>
+  - <SwmLink doc-title="Message correlation in camunda bpmn engine">[Message correlation in camunda bpmn engine](.swm/message-correlation-in-camunda-bpmn-engine.kjhk43xz.sw.md)</SwmLink>
+  - <SwmLink doc-title="Activity instance retrieval process">[Activity instance retrieval process](.swm/activity-instance-retrieval-process.ifkkbb44.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deletion of a process definition">[Deletion of a process definition](.swm/deletion-of-a-process-definition.ue34dcje.sw.md)</SwmLink>
+  - <SwmLink doc-title="Retrieving a deployed form in camunda">[Retrieving a deployed form in camunda](.swm/retrieving-a-deployed-form-in-camunda.pbx2txq1.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process instance execution flow">[Process instance execution flow](.swm/process-instance-execution-flow.9jw4f55s.sw.md)</SwmLink>
+  - <SwmLink doc-title="Execution of filter count command">[Execution of filter count command](.swm/execution-of-filter-count-command.9y5mfl6q.sw.md)</SwmLink>
+  - <SwmLink doc-title="Handling and storing historic identity link events">[Handling and storing historic identity link events](.swm/handling-and-storing-historic-identity-link-events.6wbkvbrt.sw.md)</SwmLink>
+  - <SwmLink doc-title="Setting process definition version in camunda bpm engine">[Setting process definition version in camunda bpm engine](.swm/setting-process-definition-version-in-camunda-bpm-engine.g2jy9z84.sw.md)</SwmLink>
+  - <SwmLink doc-title="Failed job handling process">[Failed job handling process](.swm/failed-job-handling-process.koyfkrfr.sw.md)</SwmLink>
+  - <SwmLink doc-title="Handling history events process">[Handling history events process](.swm/handling-history-events-process.xgots9md.sw.md)</SwmLink>
+  - <SwmLink doc-title="Adding a new historic identity link event">[Adding a new historic identity link event](.swm/adding-a-new-historic-identity-link-event.5xs3eb2c.sw.md)</SwmLink>
+  - <SwmLink doc-title="External task completion process">[External task completion process](.swm/external-task-completion-process.80o7y96f.sw.md)</SwmLink>
+  - <SwmLink doc-title="Batch deletion process">[Batch deletion process](.swm/batch-deletion-process.756thj2y.sw.md)</SwmLink>
+  - <SwmLink doc-title="User deletion process">[User deletion process](.swm/user-deletion-process.uxtou483.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deletion and flushing of event subscriptions">[Deletion and flushing of event subscriptions](.swm/deletion-and-flushing-of-event-subscriptions.93t2s0qw.sw.md)</SwmLink>
+  - <SwmLink doc-title="Bootstrap process in camunda">[Bootstrap process in camunda](.swm/bootstrap-process-in-camunda.ya1732aj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Decision definition deployment in camunda">[Decision definition deployment in camunda](.swm/decision-definition-deployment-in-camunda.s8fqabqv.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task form submission process">[Task form submission process](.swm/task-form-submission-process.5cw3vp5l.sw.md)</SwmLink>
+  - <SwmLink doc-title="Asynchronous event scheduling">[Asynchronous event scheduling](.swm/asynchronous-event-scheduling.eh68sx49.sw.md)</SwmLink>
+  - <SwmLink doc-title="Job definition priority setting process">[Job definition priority setting process](.swm/job-definition-priority-setting-process.22vbe3jl.sw.md)</SwmLink>
+  - <SwmLink doc-title="Incident management in camunda bpm engine">[Incident management in camunda bpm engine](.swm/incident-management-in-camunda-bpm-engine.0a0s45q7.sw.md)</SwmLink>
+  - <SwmLink doc-title="Fetching and processing external tasks">[Fetching and processing external tasks](.swm/fetching-and-processing-external-tasks.q89mlt8e.sw.md)</SwmLink>
+  - <SwmLink doc-title="Setting the state of a process definition in camunda">[Setting the state of a process definition in camunda](.swm/setting-the-state-of-a-process-definition-in-camunda.eyhms546.sw.md)</SwmLink>
+  - <SwmLink doc-title="Deleting identity links process">[Deleting identity links process](.swm/deleting-identity-links-process.u3tr7l7f.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task claiming process">[Task claiming process](.swm/task-claiming-process.dsz3jd92.sw.md)</SwmLink>
+  - <SwmLink doc-title="Asynchronous retry setting flow">[Asynchronous retry setting flow](.swm/asynchronous-retry-setting-flow.2rt4vqoo.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process of updating external task retries">[Process of updating external task retries](.swm/process-of-updating-external-task-retries.73ysw13i.sw.md)</SwmLink>
+  - <SwmLink doc-title="Batch command execution in bpm engine">[Batch command execution in bpm engine](.swm/batch-command-execution-in-bpm-engine.yi651t9j.sw.md)</SwmLink>
+  - <SwmLink doc-title="Saving attachments process flow">[Saving attachments process flow](.swm/saving-attachments-process-flow.yvzsl61y.sw.md)</SwmLink>
+  - <SwmLink doc-title="Message correlation in camunda">[Message correlation in camunda](.swm/message-correlation-in-camunda.qxl55asq.sw.md)</SwmLink>
+  - <SwmLink doc-title="Task resolution process">[Task resolution process](.swm/task-resolution-process.txntjqhl.sw.md)</SwmLink>
+  - <SwmLink doc-title="Message correlation in camunda">[Message correlation in camunda](.swm/message-correlation-in-camunda.xqtmdwvl.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process of creating a new execution">[Process of creating a new execution](.swm/process-of-creating-a-new-execution.9g1c34z0.sw.md)</SwmLink>
+  - <SwmLink doc-title="Event subscription deletion process">[Event subscription deletion process](.swm/event-subscription-deletion-process.edioof5v.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process definition persistence flow">[Process definition persistence flow](.swm/process-definition-persistence-flow.zuldmfez.sw.md)</SwmLink>
+  - <SwmLink doc-title="Process of saving authorization">[Process of saving authorization](.swm/process-of-saving-authorization.z5n4cvrx.sw.md)</SwmLink>
+  - <SwmLink doc-title="Command interface overview">[Command interface overview](.swm/command-interface-overview.5i77r.sw.md)</SwmLink>
+  - <SwmLink doc-title="Abstractquery class overview">[Abstractquery class overview](.swm/abstractquery-class-overview.up5rn.sw.md)</SwmLink>
+  - <SwmLink doc-title="Abstractcmmneventatomicoperation overview">[Abstractcmmneventatomicoperation overview](.swm/abstractcmmneventatomicoperation-overview.55a9n.sw.md)</SwmLink>
+  - <SwmLink doc-title="Processenginelogger overview">[Processenginelogger overview](.swm/processenginelogger-overview.9arhj.sw.md)</SwmLink>
+  - <SwmLink doc-title="Executionlistener interface in camunda bpmn engine">[Executionlistener interface in camunda bpmn engine](.swm/executionlistener-interface-in-camunda-bpmn-engine.lzjzb.sw.md)</SwmLink>
+  - <SwmLink doc-title="Filter interface overview">[Filter interface overview](.swm/filter-interface-overview.973od.sw.md)</SwmLink>
+  - <SwmLink doc-title="Understanding the history concept">[Understanding the history concept](.swm/understanding-the-history-concept.2m1x8kwj.sw.md)</SwmLink>
+  - **Authorization**
+    - <SwmLink doc-title="Understanding authorization">[Understanding authorization](.swm/understanding-authorization.aolwtrch.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding resources in the engine">[Understanding resources in the engine](.swm/understanding-resources-in-the-engine.08hk98ts.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the authorization engine">[Understanding the authorization engine](.swm/understanding-the-authorization-engine.mpp5btzl.sw.md)</SwmLink>
+    - **Permissions (engine)**
+      - <SwmLink doc-title="Understanding permissions in the engine">[Understanding permissions in the engine](.swm/understanding-permissions-in-the-engine.flz72vtc.sw.md)</SwmLink>
+      - <SwmLink doc-title="Performance implications of frequent permission checks">[Performance implications of frequent permission checks](.swm/performance-implications-of-frequent-permission-checks.mx3c6fiv.sw.md)</SwmLink>
+      - <SwmLink doc-title="Caching mechanisms for optimizing permission checks">[Caching mechanisms for optimizing permission checks](.swm/caching-mechanisms-for-optimizing-permission-checks.1hmad45r.sw.md)</SwmLink>
+    - **Groups (engine)**
+      - <SwmLink doc-title="Introduction to groups in the engine">[Introduction to groups in the engine](.swm/introduction-to-groups-in-the-engine.st2dhkvy.sw.md)</SwmLink>
+      - <SwmLink doc-title="Integration of authorization mechanism with rest of the engine">[Integration of authorization mechanism with rest of the engine](.swm/integration-of-authorization-mechanism-with-rest-of-the-engine.kl6dfcwl.sw.md)</SwmLink>
+  - **Migration**
+    - <SwmLink doc-title="Understanding migration process">[Understanding migration process](.swm/understanding-migration-process.xahzbv94.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to migration instructions">[Introduction to migration instructions](.swm/introduction-to-migration-instructions.1s8imnyc.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the migration plan">[Understanding the migration plan](.swm/understanding-the-migration-plan.p8f3ih8b.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding migration validation">[Understanding migration validation](.swm/understanding-migration-validation.wrcmv941.sw.md)</SwmLink>
+  - **Runtime**
+    - <SwmLink doc-title="Introduction to runtime">[Introduction to runtime](.swm/introduction-to-runtime.2osmn2ge.sw.md)</SwmLink>
+    - <SwmLink doc-title="Exploring process management">[Exploring process management](.swm/exploring-process-management.tcnm9b3f.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to case management">[Introduction to case management](.swm/introduction-to-case-management.c82nk0xj.sw.md)</SwmLink>
+  - **Repository**
+    - <SwmLink doc-title="Overview of the repository package">[Overview of the repository package](.swm/overview-of-the-repository-package.fal0o420.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to process definitions">[Introduction to process definitions](.swm/introduction-to-process-definitions.v6pyn4ro.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with deployment">[Getting started with deployment](.swm/getting-started-with-deployment.fkd2nq5d.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding decision definitions">[Understanding decision definitions](.swm/understanding-decision-definitions.g3t7wydg.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with resource interfaces">[Getting started with resource interfaces](.swm/getting-started-with-resource-interfaces.3zy0febm.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding diagrams in workflow automation">[Understanding diagrams in workflow automation](.swm/understanding-diagrams-in-workflow-automation.bwirbmj2.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with case definitions">[Getting started with case definitions](.swm/getting-started-with-case-definitions.fe8860yd.sw.md)</SwmLink>
+- **Engine DMN**
+  - <SwmLink doc-title="Exploring the dmn engine">[Exploring the dmn engine](.swm/exploring-the-dmn-engine.7tfjpray.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine dmnengine">[Maven configuration in engine dmnengine](.swm/maven-configuration-in-engine-dmnengine.6vbifj7b.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven usage in engine dmnbom">[Maven usage in engine dmnbom](.swm/maven-usage-in-engine-dmnbom.mmqt8qc5.sw.md)</SwmLink>
+  - <SwmLink doc-title="Decision evaluation process">[Decision evaluation process](.swm/decision-evaluation-process.us8map7s.sw.md)</SwmLink>
+  - **Feel Scala**
+    - <SwmLink doc-title="Basic concepts of feel scala in citi camunda">[Basic concepts of feel scala in citi camunda](.swm/basic-concepts-of-feel-scala-in-citi-camunda.urrc3n1i.sw.md)</SwmLink>
+    - <SwmLink doc-title="Maven configuration in engine dmnfeel scala">[Maven configuration in engine dmnfeel scala](.swm/maven-configuration-in-engine-dmnfeel-scala.2l47sfk4.sw.md)</SwmLink>
+    - <SwmLink doc-title="Exploring the scalafeelengine">[Exploring the scalafeelengine](.swm/exploring-the-scalafeelengine.973fkion.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the customfunction class">[Understanding the customfunction class](.swm/understanding-the-customfunction-class.8mmz6ao7.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding customfunctionbuilder">[Understanding customfunctionbuilder](.swm/understanding-customfunctionbuilder.y318xyj3.sw.md)</SwmLink>
+  - **Feel API**
+    - <SwmLink doc-title="Overview of the feel api">[Overview of the feel api](.swm/overview-of-the-feel-api.xu8w94tp.sw.md)</SwmLink>
+    - <SwmLink doc-title="Maven configuration in engine dmnfeel api">[Maven configuration in engine dmnfeel api](.swm/maven-configuration-in-engine-dmnfeel-api.vku07dni.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with camunda bpm core">[Getting started with camunda bpm core](.swm/getting-started-with-camunda-bpm-core.h3ksv6lf.sw.md)</SwmLink>
+    - **Feel API**
+      - <SwmLink doc-title="Introduction to feel api">[Introduction to feel api](.swm/introduction-to-feel-api.4kkmwgr2.sw.md)</SwmLink>
+      - <SwmLink doc-title="Integrating additional tools with the feel api to enhance functionality">[Integrating additional tools with the feel api to enhance functionality](.swm/integrating-additional-tools-with-the-feel-api-to-enhance-functionality.zwyadf4f.sw.md)</SwmLink>
+    - **DMN Engine Core**
+      - <SwmLink doc-title="Understanding the dmn engine core">[Understanding the dmn engine core](.swm/understanding-the-dmn-engine-core.q32q4ejc.sw.md)</SwmLink>
+      - <SwmLink doc-title="Maven configuration in engine dmn">[Maven configuration in engine dmn](.swm/maven-configuration-in-engine-dmn.wazo60ob.sw.md)</SwmLink>
+  - **Feel Juel**
+    - <SwmLink doc-title="Overview of feel juel">[Overview of feel juel](.swm/overview-of-feel-juel.6k8a88zy.sw.md)</SwmLink>
+    - <SwmLink doc-title="Maven configuration in engine dmnfeel juel">[Maven configuration in engine dmnfeel juel](.swm/maven-configuration-in-engine-dmnfeel-juel.908j5v2v.sw.md)</SwmLink>
+    - <SwmLink doc-title="Role of feel juel in the overall workflow of camunda platform">[Role of feel juel in the overall workflow of camunda platform](.swm/role-of-feel-juel-in-the-overall-workflow-of-camunda-platform.aiyv03rm.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with feel juel implementation">[Getting started with feel juel implementation](.swm/getting-started-with-feel-juel-implementation.cu7raiab.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding feel juel transformation">[Understanding feel juel transformation](.swm/understanding-feel-juel-transformation.79pqqcvf.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with feel juel el context">[Getting started with feel juel el context](.swm/getting-started-with-feel-juel-el-context.gnwomnxi.sw.md)</SwmLink>
+- **Engine REST**
+  - <SwmLink doc-title="Introduction to engine rest in camunda">[Introduction to engine rest in camunda](.swm/introduction-to-engine-rest-in-camunda.e9ia33k7.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine restengine rest openapi generator">[Maven configuration in engine restengine rest openapi generator](.swm/maven-configuration-in-engine-restengine-rest-openapi-generator.nmkc6z03.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine restengine rest openapi">[Maven configuration in engine restengine rest openapi](.swm/maven-configuration-in-engine-restengine-rest-openapi.mt3srwc5.sw.md)</SwmLink>
+  - <SwmLink doc-title="Using maven in the engine restdocs directory">[Using maven in the engine restdocs directory](.swm/using-maven-in-the-engine-restdocs-directory.s6m3j4ht.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine restengine rest jakarta">[Maven configuration in engine restengine rest jakarta](.swm/maven-configuration-in-engine-restengine-rest-jakarta.8r3dnuox.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine restengine rest">[Maven configuration in engine restengine rest](.swm/maven-configuration-in-engine-restengine-rest.4ewmc0w7.sw.md)</SwmLink>
+  - **Templates**
+    - <SwmLink doc-title="Exploring the role of templates in citi camunda">[Exploring the role of templates in citi camunda](.swm/exploring-the-role-of-templates-in-citi-camunda.t24kwkix.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding process instance">[Understanding process instance](.swm/understanding-process-instance.wysmkis1.sw.md)</SwmLink>
+    - <SwmLink doc-title="Exploring the external task">[Exploring the external task](.swm/exploring-the-external-task.0jfnotpd.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of authorization">[Overview of authorization](.swm/overview-of-authorization.wqkl3mu9.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the filter functionality">[Understanding the filter functionality](.swm/understanding-the-filter-functionality.ck4xrml1.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of user in citi camunda">[Overview of user in citi camunda](.swm/overview-of-user-in-citi-camunda.9zw7ghqn.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to tenants in camunda platform">[Introduction to tenants in camunda platform](.swm/introduction-to-tenants-in-camunda-platform.b9ms2hvi.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to variable instances">[Introduction to variable instances](.swm/introduction-to-variable-instances.h3v072v6.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the group concept">[Understanding the group concept](.swm/understanding-the-group-concept.y2w3gv9d.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of job">[Overview of job](.swm/overview-of-job.th8ywjc9.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding tasks in citi camunda">[Understanding tasks in citi camunda](.swm/understanding-tasks-in-citi-camunda.kljswccb.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with execution in citi camunda">[Getting started with execution in citi camunda](.swm/getting-started-with-execution-in-citi-camunda.w5nxf74k.sw.md)</SwmLink>
+    - <SwmLink doc-title="Basic concepts of incident handling">[Basic concepts of incident handling](.swm/basic-concepts-of-incident-handling.kl2jrqou.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of history in process execution">[Overview of history in process execution](.swm/overview-of-history-in-process-execution.7m6umjhx.sw.md)</SwmLink>
+    - <SwmLink doc-title="Basic concepts of deployment in citi camunda">[Basic concepts of deployment in citi camunda](.swm/basic-concepts-of-deployment-in-citi-camunda.ne5gbvkr.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of batch operations">[Overview of batch operations](.swm/overview-of-batch-operations.gx22n001.sw.md)</SwmLink>
+  - **Paths**
+    - <SwmLink doc-title="Getting started with paths in openapi documentation">[Getting started with paths in openapi documentation](.swm/getting-started-with-paths-in-openapi-documentation.1flto97i.sw.md)</SwmLink>
+    - <SwmLink doc-title="Basic concepts of external task">[Basic concepts of external task](.swm/basic-concepts-of-external-task.znmo6u5v.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding basic concepts of process instance">[Understanding basic concepts of process instance](.swm/understanding-basic-concepts-of-process-instance.t8wd82ay.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding authorization">[Understanding authorization](.swm/understanding-authorization.u9njzse2.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding filters in citi camunda">[Understanding filters in citi camunda](.swm/understanding-filters-in-citi-camunda.h0y36ki3.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of user">[Overview of user](.swm/overview-of-user.nsp976wt.sw.md)</SwmLink>
+    - <SwmLink doc-title="Exploring the tenant concept">[Exploring the tenant concept](.swm/exploring-the-tenant-concept.xz5qwke2.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding variable instances">[Understanding variable instances](.swm/understanding-variable-instances.0p344th7.sw.md)</SwmLink>
+    - <SwmLink doc-title="Exploring the group concept">[Exploring the group concept](.swm/exploring-the-group-concept.azveyq8z.sw.md)</SwmLink>
+    - <SwmLink doc-title="Overview of task in process automation">[Overview of task in process automation](.swm/overview-of-task-in-process-automation.81rtvcg9.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the execution concept">[Understanding the execution concept](.swm/understanding-the-execution-concept.qsr65ki0.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to process definition">[Introduction to process definition](.swm/introduction-to-process-definition.1l8equuu.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding the job log">[Understanding the job log](.swm/understanding-the-job-log.0atnye2q.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to the external task log">[Introduction to the external task log](.swm/introduction-to-the-external-task-log.ftxiqi4q.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding activity instance">[Understanding activity instance](.swm/understanding-activity-instance.fy8hz23a.sw.md)</SwmLink>
+    - <SwmLink doc-title="Basic concepts of historic detail">[Basic concepts of historic detail](.swm/basic-concepts-of-historic-detail.789mlkt6.sw.md)</SwmLink>
+    - <SwmLink doc-title="Introduction to process instance history">[Introduction to process instance history](.swm/introduction-to-process-instance-history.zc0l9rca.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding variable instance history">[Understanding variable instance history](.swm/understanding-variable-instance-history.3meh3esk.sw.md)</SwmLink>
+    - <SwmLink doc-title="Basic concepts of batch history">[Basic concepts of batch history](.swm/basic-concepts-of-batch-history.kuiuwera.sw.md)</SwmLink>
+    - <SwmLink doc-title="An overview of deployment">[An overview of deployment](.swm/an-overview-of-deployment.g8m6xveo.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding batch operations">[Understanding batch operations](.swm/understanding-batch-operations.q28ff8ee.sw.md)</SwmLink>
+    - **Job**
+      - <SwmLink doc-title="Overview of job in citi camunda">[Overview of job in citi camunda](.swm/overview-of-job-in-citi-camunda.gtery7st.sw.md)</SwmLink>
+      - <SwmLink doc-title="Approach to error handling in job api">[Approach to error handling in job api](.swm/approach-to-error-handling-in-job-api.s5lu899f.sw.md)</SwmLink>
+      - <SwmLink doc-title="Ensuring security in job api interaction">[Ensuring security in job api interaction](.swm/ensuring-security-in-job-api-interaction.nmc4pug1.sw.md)</SwmLink>
+  - **Assembly**
+    - <SwmLink doc-title="Getting started with assembly configuration">[Getting started with assembly configuration](.swm/getting-started-with-assembly-configuration.djdn9jj5.sw.md)</SwmLink>
+    - <SwmLink doc-title="Maven configuration in engine restassembly jakarta">[Maven configuration in engine restassembly jakarta](.swm/maven-configuration-in-engine-restassembly-jakarta.8ygumvd5.sw.md)</SwmLink>
+    - <SwmLink doc-title="Maven configuration in engine restassembly">[Maven configuration in engine restassembly](.swm/maven-configuration-in-engine-restassembly.x5dt8q15.sw.md)</SwmLink>
+    - <SwmLink doc-title="Getting started with assembly jakarta">[Getting started with assembly jakarta](.swm/getting-started-with-assembly-jakarta.ovf2nrbs.sw.md)</SwmLink>
+    - <SwmLink doc-title="Understanding assembly configuration">[Understanding assembly configuration](.swm/understanding-assembly-configuration.z106yp0x.sw.md)</SwmLink>
+    - **Runtime Wildfly**
+      - <SwmLink doc-title="Overview of runtime wildfly configuration">[Overview of runtime wildfly configuration](.swm/overview-of-runtime-wildfly-configuration.ggbdkqjn.sw.md)</SwmLink>
+- **Identity LDAP**
+  - <SwmLink doc-title="Exploring identity ldap">[Exploring identity ldap](.swm/exploring-identity-ldap.cy65f976.sw.md)</SwmLink>
+  - <SwmLink doc-title="User count query execution in ldap session">[User count query execution in ldap session](.swm/user-count-query-execution-in-ldap-session.iwyo0kvd.sw.md)</SwmLink>
+  - <SwmLink doc-title="User query execution in ldap plugin">[User query execution in ldap plugin](.swm/user-query-execution-in-ldap-plugin.euk216ij.sw.md)</SwmLink>
+- **Integration**
+  - <SwmLink doc-title="Understanding integration">[Understanding integration](.swm/understanding-integration.n4dlvwn3.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine cdijakarta">[Maven configuration in engine cdijakarta](.swm/maven-configuration-in-engine-cdijakarta.l49mwioe.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine springcore">[Maven configuration in engine springcore](.swm/maven-configuration-in-engine-springcore.afu1kx3d.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine springcore 6">[Maven configuration in engine springcore 6](.swm/maven-configuration-in-engine-springcore-6.vjgcrm5q.sw.md)</SwmLink>
+  - <SwmLink doc-title="Maven configuration in engine cdicore">[Maven configuration in engine cdicore](.swm/maven-configuration-in-engine-cdicore.nlmtw44h.sw.md)</SwmLink>
+
+### API Clients
+
+- <SwmLink doc-title="Understanding api clients">[Understanding api clients](.swm/understanding-api-clients.5yea9hqb.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in java client">[Maven configuration in java client](.swm/maven-configuration-in-java-client.4r8oetot.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in clientsjavaqa">[Maven configuration in clientsjavaqa](.swm/maven-configuration-in-clientsjavaqa.rtf3xhk3.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven usage in the java client">[Maven usage in the java client](.swm/maven-usage-in-the-java-client.ajx5z6dk.sw.md)</SwmLink>
+- <SwmLink doc-title="Getting started with task management">[Getting started with task management](.swm/getting-started-with-task-management.dj8es7zw.sw.md)</SwmLink>
+- <SwmLink doc-title="Data management overview">[Data management overview](.swm/data-management-overview.3eimmlva.sw.md)</SwmLink>
+- <SwmLink doc-title="Understanding error handling in citi camunda">[Understanding error handling in citi camunda](.swm/understanding-error-handling-in-citi-camunda.hqnm6g5z.sw.md)</SwmLink>
+
+### Flows
+
+- <SwmLink doc-title="Fetch and lock process">[Fetch and lock process](.swm/fetch-and-lock-process.vljvov65.sw.md)</SwmLink>
+- <SwmLink doc-title="Task execution flow">[Task execution flow](.swm/task-execution-flow.zhzz6lub.sw.md)</SwmLink>
+- <SwmLink doc-title="Task querying and processing in camunda">[Task querying and processing in camunda](.swm/task-querying-and-processing-in-camunda.7oegde40.sw.md)</SwmLink>
+- <SwmLink doc-title="Execution of a single result in camunda">[Execution of a single result in camunda](.swm/execution-of-a-single-result-in-camunda.usx4rsow.sw.md)</SwmLink>
+- <SwmLink doc-title="Query single result process">[Query single result process](.swm/query-single-result-process.a0pnay6x.sw.md)</SwmLink>
+- <SwmLink doc-title="Fetch and lock process">[Fetch and lock process](.swm/fetch-and-lock-process.8cjp10lw.sw.md)</SwmLink>
+
+## Classes
+
+- <SwmLink doc-title="Cmmnmodelelementinstanceimpl overview">[Cmmnmodelelementinstanceimpl overview](.swm/cmmnmodelelementinstanceimpl-overview.eubhf.sw.md)</SwmLink>
+- <SwmLink doc-title="Overview of the bpmnmodelelementinstanceimpl class">[Overview of the bpmnmodelelementinstanceimpl class](.swm/overview-of-the-bpmnmodelelementinstanceimpl-class.07rtg.sw.md)</SwmLink>
+- <SwmLink doc-title="Overview of the primitivetypevalueimpl class">[Overview of the primitivetypevalueimpl class](.swm/overview-of-the-primitivetypevalueimpl-class.ww195.sw.md)</SwmLink>
+- <SwmLink doc-title="Abstractcamundaconfiguration overview">[Abstractcamundaconfiguration overview](.swm/abstractcamundaconfiguration-overview.uixs6.sw.md)</SwmLink>
+- <SwmLink doc-title="Dmnelementreferenceimpl class overview">[Dmnelementreferenceimpl class overview](.swm/dmnelementreferenceimpl-class-overview.o3gq6.sw.md)</SwmLink>
+- <SwmLink doc-title="Expressionimpl class overview">[Expressionimpl class overview](.swm/expressionimpl-class-overview.yyspu.sw.md)</SwmLink>
+- <SwmLink doc-title="Overview of the primitivevaluetypeimpl class">[Overview of the primitivevaluetypeimpl class](.swm/overview-of-the-primitivevaluetypeimpl-class.852q9.sw.md)</SwmLink>
+- <SwmLink doc-title="Elementreferencecollectionimpl class overview">[Elementreferencecollectionimpl class overview](.swm/elementreferencecollectionimpl-class-overview.dg2xs.sw.md)</SwmLink>
+
+## Build Tools
+
+- <SwmLink doc-title="Maven configuration in webappsassembly jakarta">[Maven configuration in webappsassembly jakarta](.swm/maven-configuration-in-webappsassembly-jakarta.sjbc5uzc.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration in webappsassembly">[Maven configuration in webappsassembly](.swm/maven-configuration-in-webappsassembly.a02q3vyj.sw.md)</SwmLink>
+- <SwmLink doc-title="Building the webapps with maven">[Building the webapps with maven](.swm/building-the-webapps-with-maven.8l73se1g.sw.md)</SwmLink>
+- <SwmLink doc-title="Maven configuration and usage in the project">[Maven configuration and usage in the project](.swm/maven-configuration-and-usage-in-the-project.4j07xyn1.sw.md)</SwmLink>
+
+&nbsp;
+
+*This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
+
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda" doc-type="other"><sup>Powered by [Swimm](/)</sup></SwmMeta>
