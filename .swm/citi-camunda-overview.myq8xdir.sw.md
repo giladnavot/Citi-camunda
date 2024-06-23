@@ -71,7 +71,6 @@ The Citi-camunda repo is an open-source platform for workflow and process automa
   - <SwmLink doc-title="Understanding pages in citi camunda">[Understanding pages in citi camunda](.swm/understanding-pages-in-citi-camunda.z1uo1va4.sw.md)</SwmLink>
   - <SwmLink doc-title="Overview of processes in citi camunda">[Overview of processes in citi camunda](.swm/overview-of-processes-in-citi-camunda.zg1tg63k.sw.md)</SwmLink>
   - <SwmLink doc-title="Understanding components in citi camunda">[Understanding components in citi camunda](.swm/understanding-components-in-citi-camunda.tlndl4yb.sw.md)</SwmLink>
-  - <SwmLink doc-title="Basic concepts of repository in citi camunda">[Basic concepts of repository in citi camunda](.swm/basic-concepts-of-repository-in-citi-camunda.x2hutn6q.sw.md)</SwmLink>
   - **Resources**
     - <SwmLink doc-title="Getting started with resources in citi camunda">[Getting started with resources in citi camunda](.swm/getting-started-with-resources-in-citi-camunda.k8rnlxmv.sw.md)</SwmLink>
     - <SwmLink doc-title="Diving deeper into the file structure of the resources component">[Diving deeper into the file structure of the resources component](.swm/diving-deeper-into-the-file-structure-of-the-resources-component.18qnyao5.sw.md)</SwmLink>
@@ -325,7 +324,6 @@ The Citi-camunda repo is an open-source platform for workflow and process automa
     - <SwmLink doc-title="Overview of task in process automation">[Overview of task in process automation](.swm/overview-of-task-in-process-automation.81rtvcg9.sw.md)</SwmLink>
     - <SwmLink doc-title="Understanding the execution concept">[Understanding the execution concept](.swm/understanding-the-execution-concept.qsr65ki0.sw.md)</SwmLink>
     - <SwmLink doc-title="Introduction to process definition">[Introduction to process definition](.swm/introduction-to-process-definition.1l8equuu.sw.md)</SwmLink>
-    - <SwmLink doc-title="Understanding the job log">[Understanding the job log](.swm/understanding-the-job-log.0atnye2q.sw.md)</SwmLink>
     - <SwmLink doc-title="Introduction to the external task log">[Introduction to the external task log](.swm/introduction-to-the-external-task-log.ftxiqi4q.sw.md)</SwmLink>
     - <SwmLink doc-title="Understanding activity instance">[Understanding activity instance](.swm/understanding-activity-instance.fy8hz23a.sw.md)</SwmLink>
     - <SwmLink doc-title="Basic concepts of historic detail">[Basic concepts of historic detail](.swm/basic-concepts-of-historic-detail.789mlkt6.sw.md)</SwmLink>
