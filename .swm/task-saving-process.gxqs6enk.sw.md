@@ -81,7 +81,7 @@ end
 
 # Executing metrics and triggering update events
 
-The `executeMetrics` function is used to execute specific metrics based on the metrics name and the process engine configuration. It also handles the case when the assignee has changed and is not null, marking a new task worker.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/entity/TaskEntity.java" pos="1714:5:5" line-data="  public void executeMetrics(String metricsName, CommandContext commandContext) {">`executeMetrics`</SwmToken> function is used to execute specific metrics based on the metrics name and the process engine configuration. It also handles the case when the assignee has changed and is not null, marking a new task worker.
 
 ```java
   public void executeMetrics(String metricsName, CommandContext commandContext) {
@@ -107,7 +107,7 @@ The `executeMetrics` function is used to execute specific metrics based on the m
 
 # Transitioning to a new task state
 
-The `createHistoricTask` function is used to create a historic task instance. It checks if a history event of type `TASK_INSTANCE_CREATE` is produced for the task and if so, it creates a history event.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/entity/TaskEntity.java" pos="1186:7:7" line-data="        commandContext.getHistoricTaskInstanceManager().createHistoricTask(this);">`createHistoricTask`</SwmToken> function is used to create a historic task instance. It checks if a history event of type <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/history/producer/DefaultHistoryEventProducer.java" pos="771:15:15" line-data="    initTaskInstanceEvent(evt, (TaskEntity) task, HistoryEventTypes.TASK_INSTANCE_CREATE);">`TASK_INSTANCE_CREATE`</SwmToken> is produced for the task and if so, it creates a history event.
 
 ```java
     setTenantId(execution.getTenantId());
@@ -137,7 +137,7 @@ The `createHistoricTask` function is used to create a historic task instance. It
 
 # Firing assignment events and invoking listeners
 
-The `fireEvent` function is used to fire a task event. It fetches the listeners for the event and invokes each listener.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/entity/TaskEntity.java" pos="1037:5:5" line-data="  public boolean fireEvent(String taskEventName) {">`fireEvent`</SwmToken> function is used to fire a task event. It fetches the listeners for the event and invokes each listener.
 
 ```java
   /**
@@ -169,7 +169,7 @@ The `fireEvent` function is used to fire a task event. It fetches the listeners 
 
 ---
 
-The `invokeListener` function is used to invoke a task listener. It handles the case when the execution is null and sets the event name.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/entity/TaskEntity.java" pos="1076:5:5" line-data="  protected boolean invokeListener(String taskEventName, TaskListener taskListener) {">`invokeListener`</SwmToken> function is used to invoke a task listener. It handles the case when the execution is null and sets the event name.
 
 ```java
   protected boolean invokeListener(String taskEventName, TaskListener taskListener) {
@@ -205,7 +205,7 @@ The `invokeListener` function is used to invoke a task listener. It handles the 
 
 # Fetching task definitions and resolving definitions
 
-The `getTaskDefinition` function is used to fetch the task definition. It checks if the task definition is null and if the task definition key is not null, it fetches the task definitions from the process definition or case definition.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/entity/TaskEntity.java" pos="1322:5:5" line-data="  public TaskDefinition getTaskDefinition() {">`getTaskDefinition`</SwmToken> function is used to fetch the task definition. It checks if the task definition is null and if the task definition key is not null, it fetches the task definitions from the process definition or case definition.
 
 ```java
   public TaskDefinition getTaskDefinition() {
@@ -239,7 +239,7 @@ The `getTaskDefinition` function is used to fetch the task definition. It checks
 
 ---
 
-The `resolveDefinition` function is used to resolve a definition. It checks if the definition is cached and if not, it deploys the resources of the deployment.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/deploy/cache/ResourceDefinitionCache.java" pos="111:5:5" line-data="  public T resolveDefinition(T definition) {">`resolveDefinition`</SwmToken> function is used to resolve a definition. It checks if the definition is cached and if not, it deploys the resources of the deployment.
 
 ```java
   public T resolveDefinition(T definition) {
@@ -275,7 +275,7 @@ The `resolveDefinition` function is used to resolve a definition. It checks if t
 
 # Creating historic task instances
 
-The `createTaskInstanceCreateEvt` function is used to create a task instance create event. It initializes a new task instance event and sets the start time.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/history/producer/DefaultHistoryEventProducer.java" pos="765:5:5" line-data="  public HistoryEvent createTaskInstanceCreateEvt(DelegateTask task) {">`createTaskInstanceCreateEvt`</SwmToken> function is used to create a task instance create event. It initializes a new task instance event and sets the start time.
 
 ```java
   public HistoryEvent createTaskInstanceCreateEvt(DelegateTask task) {
@@ -302,7 +302,7 @@ The `createTaskInstanceCreateEvt` function is used to create a task instance cre
 
 # Inserting the task into the task manager
 
-The `insert` function is used to insert the task into the task manager. It fetches the task manager from the command context and inserts the task.
+The <SwmToken path="/engine/src/main/java/org/camunda/bpm/engine/impl/persistence/entity/TaskEntity.java" pos="238:5:5" line-data="  public void insert() {">`insert`</SwmToken> function is used to insert the task into the task manager. It fetches the task manager from the command context and inserts the task.
 
 ```java
   public void insert() {
@@ -320,4 +320,4 @@ The `insert` function is used to insert the task into the task manager. It fetch
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda" doc-type="flows"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

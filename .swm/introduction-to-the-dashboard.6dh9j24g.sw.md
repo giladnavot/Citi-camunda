@@ -1,7 +1,7 @@
 ---
 title: Introduction to the Dashboard
 ---
-The Dashboard in Citi-camunda is a user interface component that provides a consolidated view of various metrics and information. It is implemented in the `dashboard.js` file, and it includes properties like `actual`, `names`, `assigned`, `value`, `unfinished`, `values`, and `template`. The Dashboard also includes a `tasks` function that counts tasks and prepares values for display. The Dashboard is rendered using the `dashboard.html` template, and its styles are defined in the `dashboard.less` file.
+The Dashboard in Citi-camunda is a user interface component that provides a consolidated view of various metrics and information. It is implemented in the <SwmPath>[webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js](/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js)</SwmPath> file, and it includes properties like <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="107:1:1" line-data="      actual: {}">`actual`</SwmToken>, <SwmToken path="/spin/dataformat-xml-dom/src/test/resources/org/camunda/spin/javascript/xml/dom/XmlDomElementScriptTest.getAllAttributesAndNamesByNamespace.js" pos="3:0:0" line-data="names = xml.attrNames(namespace)">`names`</SwmToken>, <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="262:1:1" line-data="                        assigned: true">`assigned`</SwmToken>, <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="271:1:1" line-data="                          value: value">`value`</SwmToken>, <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="261:1:1" line-data="                        unfinished: true,">`unfinished`</SwmToken>, <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="125:9:9" line-data="      var treshold = valuesTreshold(values.length, total);">`values`</SwmToken>, and <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="20:2:2" line-data="var template = require(&#39;./dashboard.html?raw&#39;);">`template`</SwmToken>. The Dashboard also includes a <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="248:1:1" line-data="          tasks: function(next) {">`tasks`</SwmToken> function that counts tasks and prepares values for display. The Dashboard is rendered using the <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> template, and its styles are defined in the <SwmPath>[webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.less](/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.less)</SwmPath> file.
 
 <SwmSnippet path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" line="20">
 
@@ -45,7 +45,7 @@ The Dashboard maintains a data object that holds the actual data to be displayed
 
 # Dashboard Tasks
 
-The Dashboard includes a `tasks` function that fetches and processes task-related data. This data includes the total number of tasks, tasks assigned to users, tasks assigned to groups, and unassigned tasks.
+The Dashboard includes a <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="248:1:1" line-data="          tasks: function(next) {">`tasks`</SwmToken> function that fetches and processes task-related data. This data includes the total number of tasks, tasks assigned to users, tasks assigned to groups, and unassigned tasks.
 
 ```javascript
           tasks: function(next) {
@@ -81,7 +81,7 @@ The Dashboard includes a `tasks` function that fetches and processes task-relate
 
 # Dashboard Processes
 
-The Dashboard includes a `processes` function that observes and processes process-related data. This data includes process instances and incidents.
+The Dashboard includes a <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="237:1:1" line-data="          processes: function(next) {">`processes`</SwmToken> function that observes and processes process-related data. This data includes process instances and incidents.
 
 ```javascript
           processes: function(next) {
@@ -123,15 +123,15 @@ The Dashboard is accessed through the '/dashboard' route in the application. Thi
 
 # Dashboard Functions
 
-The Dashboard in the Citi-camunda project is a crucial component that provides a visual representation of the workflow and process automation. It is implemented in several files, mainly in the 'dashboard.js' and 'dashboard.html' files. The dashboard contains several functions and properties that contribute to its functionality.
+The Dashboard in the Citi-camunda project is a crucial component that provides a visual representation of the workflow and process automation. It is implemented in several files, mainly in the <SwmPath>[webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js](/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js)</SwmPath> and <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> files. The dashboard contains several functions and properties that contribute to its functionality.
 
 <SwmSnippet path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" line="46">
 
 ---
 
-## valuesTreshold Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="46:2:2" line-data="function valuesTreshold(l, t) {">`valuesTreshold`</SwmToken> Function
 
-The `valuesTreshold` function is used to calculate a threshold value based on the length of the values and the total. It is used within the `prepareValues` function.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="46:2:2" line-data="function valuesTreshold(l, t) {">`valuesTreshold`</SwmToken> function is used to calculate a threshold value based on the length of the values and the total. It is used within the <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="124:3:3" line-data="    function prepareValues(values, total, url) {">`prepareValues`</SwmToken> function.
 
 ```javascript
 function valuesTreshold(l, t) {
@@ -147,9 +147,9 @@ function valuesTreshold(l, t) {
 
 ---
 
-## prepareValues Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="124:3:3" line-data="    function prepareValues(values, total, url) {">`prepareValues`</SwmToken> Function
 
-The `prepareValues` function is used to prepare the values for the dashboard. It uses the `valuesTreshold` function to calculate a threshold and then filters the values based on this threshold.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="124:3:3" line-data="    function prepareValues(values, total, url) {">`prepareValues`</SwmToken> function is used to prepare the values for the dashboard. It uses the <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="125:7:7" line-data="      var treshold = valuesTreshold(values.length, total);">`valuesTreshold`</SwmToken> function to calculate a threshold and then filters the values based on this threshold.
 
 ```javascript
     function prepareValues(values, total, url) {
@@ -166,7 +166,7 @@ The `prepareValues` function is used to prepare the values for the dashboard. It
 
 ## processes Function
 
-The `processes` function is used to aggregate instances and incidents of process definitions. It is used in the 'processes.xml' file and the '[README.md](http://README.md)' file.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="237:1:1" line-data="          processes: function(next) {">`processes`</SwmToken> function is used to aggregate instances and incidents of process definitions. It is used in the <SwmPath>[clients/java/qa/engine-variable-test/src/main/resources/META-INF/processes.xml](/clients/java/qa/engine-variable-test/src/main/resources/META-INF/processes.xml)</SwmPath> file and the '[README.md](http://README.md)' file.
 
 ```javascript
           processes: function(next) {
@@ -192,7 +192,7 @@ The `processes` function is used to aggregate instances and incidents of process
 
 ## tasks Function
 
-The `tasks` function is used to count the total tasks and categorize them into assigned to user, assigned to group, and unassigned tasks. It is used in the 'dashboard.html' file.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="248:1:1" line-data="          tasks: function(next) {">`tasks`</SwmToken> function is used to count the total tasks and categorize them into assigned to user, assigned to group, and unassigned tasks. It is used in the <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> file.
 
 ```javascript
           tasks: function(next) {
@@ -226,9 +226,9 @@ The `tasks` function is used to count the total tasks and categorize them into a
 
 ---
 
-## assignedToUser Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="258:1:1" line-data="                  assignedToUser: function(done) {">`assignedToUser`</SwmToken> Function
 
-The `assignedToUser` function is a part of the `tasks` function. It is used to count the tasks that are assigned to a user.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="258:1:1" line-data="                  assignedToUser: function(done) {">`assignedToUser`</SwmToken> function is a part of the <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="248:1:1" line-data="          tasks: function(next) {">`tasks`</SwmToken> function. It is used to count the tasks that are assigned to a user.
 
 ```javascript
                   assignedToUser: function(done) {
@@ -261,7 +261,7 @@ The `assignedToUser` function is a part of the `tasks` function. It is used to c
 
 ## unassigned Function
 
-The `unassigned` function is a part of the `tasks` function. It is used to count the tasks that are unassigned.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="295:1:1" line-data="                  unassigned: function(done) {">`unassigned`</SwmToken> function is a part of the <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="248:1:1" line-data="          tasks: function(next) {">`tasks`</SwmToken> function. It is used to count the tasks that are unassigned.
 
 ```javascript
                   unassigned: function(done) {
@@ -291,9 +291,9 @@ The `unassigned` function is a part of the `tasks` function. It is used to count
 
 ---
 
-## processDefinitions Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="344:1:1" line-data="          processDefinitions: function(next) {">`processDefinitions`</SwmToken> Function
 
-The `processDefinitions` function is used to count the process definitions. It is used in the 'dashboard.html' file.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="344:1:1" line-data="          processDefinitions: function(next) {">`processDefinitions`</SwmToken> function is used to count the process definitions. It is used in the <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> file.
 
 ```javascript
           processDefinitions: function(next) {
@@ -314,9 +314,9 @@ The `processDefinitions` function is used to count the process definitions. It i
 
 ---
 
-## decisionDefinitions Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="352:1:1" line-data="          decisionDefinitions: function(next) {">`decisionDefinitions`</SwmToken> Function
 
-The `decisionDefinitions` function is used to count the decision definitions. It is used in the 'dashboard.html' file.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="352:1:1" line-data="          decisionDefinitions: function(next) {">`decisionDefinitions`</SwmToken> function is used to count the decision definitions. It is used in the <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> file.
 
 ```javascript
           decisionDefinitions: function(next) {
@@ -337,9 +337,9 @@ The `decisionDefinitions` function is used to count the decision definitions. It
 
 ---
 
-## caseDefinitions Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="360:1:1" line-data="          caseDefinitions: function(next) {">`caseDefinitions`</SwmToken> Function
 
-The `caseDefinitions` function is used to count the case definitions. It is used in the 'dashboard.html' file.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="360:1:1" line-data="          caseDefinitions: function(next) {">`caseDefinitions`</SwmToken> function is used to count the case definitions. It is used in the <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> file.
 
 ```javascript
           caseDefinitions: function(next) {
@@ -360,9 +360,9 @@ The `caseDefinitions` function is used to count the case definitions. It is used
 
 ---
 
-## deploymentDefinitions Function
+## <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="368:1:1" line-data="          deploymentDefinitions: function(next) {">`deploymentDefinitions`</SwmToken> Function
 
-The `deploymentDefinitions` function is used to count the deployment definitions. It is used in the 'dashboard.html' file.
+The <SwmToken path="/webapps/frontend/ui/cockpit/client/scripts/pages/dashboard.js" pos="368:1:1" line-data="          deploymentDefinitions: function(next) {">`deploymentDefinitions`</SwmToken> function is used to count the deployment definitions. It is used in the <SwmPath>[webapps/frontend/ui/admin/client/scripts/pages/dashboard.html](/webapps/frontend/ui/admin/client/scripts/pages/dashboard.html)</SwmPath> file.
 
 ```javascript
           deploymentDefinitions: function(next) {
@@ -378,4 +378,4 @@ The `deploymentDefinitions` function is used to count the deployment definitions
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda" doc-type="overview"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

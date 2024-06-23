@@ -106,7 +106,7 @@ The function `queryJsonList` is used to execute a filter list and convert the re
 
 ---
 
-The function `convertToHalCollection` is used to convert the queried entities to a HAL collection if they are of type `Task`.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="258:3:3" line-data="      return convertToHalCollection(entities, count);">`convertToHalCollection`</SwmToken> is used to convert the queried entities to a HAL collection if they are of type <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="359:9:9" line-data="    if (isEntityOfClass(entity, Task.class)) {">`Task`</SwmToken>.
 
 ```java
   @SuppressWarnings("unchecked")
@@ -129,7 +129,7 @@ The function `convertToHalCollection` is used to convert the queried entities to
 
 # Converting queried tasks to DTO and HAL formats
 
-The function `convertToHalTaskList` is used to generate a HAL task list from the queried tasks and embed variable values in each HAL task.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="403:5:5" line-data="  protected HalTaskList convertToHalTaskList(List&lt;Task&gt; tasks, long count) {">`convertToHalTaskList`</SwmToken> is used to generate a HAL task list from the queried tasks and embed variable values in each HAL task.
 
 ```java
   @SuppressWarnings("unchecked")
@@ -153,7 +153,7 @@ The function `convertToHalTaskList` is used to generate a HAL task list from the
 
 ---
 
-The function `convertToDto` is used to convert an entity to a DTO if it is of type `Task`.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="358:5:5" line-data="  protected Object convertToDto(Object entity) {">`convertToDto`</SwmToken> is used to convert an entity to a DTO if it is of type <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="359:9:9" line-data="    if (isEntityOfClass(entity, Task.class)) {">`Task`</SwmToken>.
 
 ```java
   protected Object convertToDto(Object entity) {
@@ -176,7 +176,7 @@ The function `convertToDto` is used to convert an entity to a DTO if it is of ty
 
 # Embedding variable values in HAL tasks
 
-The function `getVariableValuesForTask` is used to get the variable values for a HAL task and generate a HAL variable value for each unique variable name.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="431:8:8" line-data="  protected List&lt;HalResource&lt;?&gt;&gt; getVariableValuesForTask(HalTask halTask, Map&lt;String, List&lt;VariableInstance&gt;&gt; variableInstances) {">`getVariableValuesForTask`</SwmToken> is used to get the variable values for a HAL task and generate a HAL variable value for each unique variable name.
 
 ```java
   protected List<HalResource<?>> getVariableValuesForTask(HalTask halTask, Map<String, List<VariableInstance>> variableInstances) {
@@ -212,7 +212,7 @@ The function `getVariableValuesForTask` is used to get the variable values for a
 
 # Generating variable values for tasks
 
-The function `generateVariableValue` is used to generate a HAL variable value based on the scope of the variable instance.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalVariableValue.java" pos="41:7:7" line-data="  public static HalVariableValue generateVariableValue(VariableInstance variableInstance, String variableScopeId) {">`generateVariableValue`</SwmToken> is used to generate a HAL variable value based on the scope of the variable instance.
 
 ```java
   public static HalVariableValue generateVariableValue(VariableInstance variableInstance, String variableScopeId) {
@@ -245,7 +245,7 @@ The function `generateVariableValue` is used to generate a HAL variable value ba
 
 ---
 
-The function `generateTaskVariableValue` is used to generate a HAL variable value for a task variable and link it to the task.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalVariableValue.java" pos="62:7:7" line-data="  public static HalVariableValue generateTaskVariableValue(VariableInstance variableInstance, String taskId) {">`generateTaskVariableValue`</SwmToken> is used to generate a HAL variable value for a task variable and link it to the task.
 
 ```java
   public static HalVariableValue generateTaskVariableValue(VariableInstance variableInstance, String taskId) {
@@ -264,7 +264,7 @@ The function `generateTaskVariableValue` is used to generate a HAL variable valu
 
 # Creating links for HAL variable values
 
-The function `link` is used to create a link for a HAL variable value.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalVariableValue.java" pos="87:5:5" line-data="  private HalVariableValue link(HalRelation relation, String resourcePath, String resourceId, String variablesPath) {">`link`</SwmToken> is used to create a link for a HAL variable value.
 
 ```java
   private HalVariableValue link(HalRelation relation, String resourcePath, String resourceId, String variablesPath) {
@@ -285,7 +285,7 @@ The function `link` is used to create a link for a HAL variable value.
 
 ---
 
-The function `createLink` is used to create a link in a given relation and add it to the linked resources.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalLinker.java" pos="55:5:5" line-data="  public void createLink(HalRelation rel, String... pathParams) {">`createLink`</SwmToken> is used to create a link in a given relation and add it to the linked resources.
 
 ```java
   /**
@@ -318,4 +318,4 @@ The function `createLink` is used to create a link in a given relation and add i
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda" doc-type="flows"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

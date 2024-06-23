@@ -9,7 +9,7 @@ Plugins in the Citi-camunda project are modular pieces of code that add specific
 
 # Plugin Structure
 
-Each plugin is structured as an AngularJS module. The `plugin.js` file exports the module, which includes other modules as dependencies. For instance, the `cockpit.plugin.base` module includes `viewsModule`, `resourcesModule`, and `dataModule` as dependencies.
+Each plugin is structured as an AngularJS module. The `plugin.js` file exports the module, which includes other modules as dependencies. For instance, the <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/views/processDefinition/diagramPlugins/index.js" pos="27:2:6" line-data="  &#39;cockpit.plugin.base.views.definition.diagram-plugins&#39;,">`cockpit.plugin.base`</SwmToken> module includes <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/plugin.js" pos="28:1:1" line-data="  viewsModule = require(&#39;./views/main&#39;),">`viewsModule`</SwmToken>, <SwmToken path="/webapps/frontend/ui/admin/plugins/base/app/plugin.js" pos="29:1:1" line-data="  resourcesModule = require(&#39;./resources/main&#39;);">`resourcesModule`</SwmToken>, and <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/plugin.js" pos="30:1:1" line-data="  dataModule = require(&#39;./data/main&#39;);">`dataModule`</SwmToken> as dependencies.
 
 ```javascript
 /*
@@ -45,7 +45,7 @@ Each plugin is structured as an AngularJS module. The `plugin.js` file exports t
 
 # Plugin Usage
 
-Plugins are used by requiring them and including them in the module dependencies. In this file, various plugins are required and included in the `cockpit.plugin.cockpitPlugins` module.
+Plugins are used by requiring them and including them in the module dependencies. In this file, various plugins are required and included in the <SwmToken path="/webapps/frontend/ui/cockpit/plugins/cockpitPlugins.js" pos="29:9:13" line-data="export default angular.module(&#39;cockpit.plugin.cockpitPlugins&#39;, [">`cockpit.plugin.cockpitPlugins`</SwmToken> module.
 
 ```javascript
 import 'ui/cockpit/plugins/styles.less';
@@ -98,9 +98,9 @@ The plugins in the Citi-camunda project are used to extend the functionality of 
 
 ---
 
-## registerDefaultView
+## <SwmToken path="/webapps/frontend/camunda-commons-ui/lib/plugin/service.js" pos="158:3:3" line-data="      this.registerDefaultView = function(key, viewProvider) {">`registerDefaultView`</SwmToken>
 
-The `registerDefaultView` function is used to register a default view for a specified key. It takes a key and a viewProvider object as parameters. The viewProvider object includes properties like id, label, url, controller, and priority. This function is used in various plugins to register their views.
+The <SwmToken path="/webapps/frontend/camunda-commons-ui/lib/plugin/service.js" pos="158:3:3" line-data="      this.registerDefaultView = function(key, viewProvider) {">`registerDefaultView`</SwmToken> function is used to register a default view for a specified key. It takes a key and a <SwmToken path="/webapps/frontend/camunda-commons-ui/lib/plugin/service.js" pos="158:12:12" line-data="      this.registerDefaultView = function(key, viewProvider) {">`viewProvider`</SwmToken> object as parameters. The <SwmToken path="/webapps/frontend/camunda-commons-ui/lib/plugin/service.js" pos="158:12:12" line-data="      this.registerDefaultView = function(key, viewProvider) {">`viewProvider`</SwmToken> object includes properties like id, label, url, controller, and priority. This function is used in various plugins to register their views.
 
 ```javascript
       /**
@@ -134,9 +134,9 @@ The `registerDefaultView` function is used to register a default view for a spec
 
 ---
 
-## instanceCount
+## <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/views/processDefinition/diagramPlugins/index.js" pos="23:2:2" line-data="var instanceCount = require(&#39;./instanceCount&#39;);">`instanceCount`</SwmToken>
 
-The `instanceCount` function is used to configure the instance count for a plugin. It is used in the diagram plugins of the base plugin.
+The <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/views/processDefinition/diagramPlugins/index.js" pos="23:2:2" line-data="var instanceCount = require(&#39;./instanceCount&#39;);">`instanceCount`</SwmToken> function is used to configure the instance count for a plugin. It is used in the diagram plugins of the base plugin.
 
 ```javascript
 var instanceCount = require('./instanceCount');
@@ -159,9 +159,9 @@ ngModule.config(callActivity);
 
 ---
 
-## callActivity
+## <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/views/processDefinition/diagramPlugins/index.js" pos="24:2:2" line-data="var callActivity = require(&#39;./callActivity&#39;);">`callActivity`</SwmToken>
 
-The `callActivity` function is used to configure the call activity for a plugin. It is used in the diagram plugins of the base plugin.
+The <SwmToken path="/webapps/frontend/ui/cockpit/plugins/base/app/views/processDefinition/diagramPlugins/index.js" pos="24:2:2" line-data="var callActivity = require(&#39;./callActivity&#39;);">`callActivity`</SwmToken> function is used to configure the call activity for a plugin. It is used in the diagram plugins of the base plugin.
 
 ```javascript
 var callActivity = require('./callActivity');
@@ -183,4 +183,4 @@ ngModule.config(callActivity);
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda" doc-type="overview"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

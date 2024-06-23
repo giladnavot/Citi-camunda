@@ -63,6 +63,58 @@ end
 
  classDef mainFlowStyle color:#000000,fill:#7CB9F4
   classDef rootsStyle color:#000000,fill:#00FFF4
+
+%% Swimm:
+%% graph TD;
+%% subgraph <SwmPath>[engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java](/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java)</SwmPath>
+%%   executeSingleResult:::mainFlowStyle --> <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="178:5:5" line-data="  public HalResource executeHalSingleResult() {">`executeHalSingleResult`</SwmToken>
+%% end
+%% subgraph <SwmPath>[engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java](/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java)</SwmPath>
+%%   executeHalSingleResult:::mainFlowStyle --> queryHalSingleResult
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java
+%%   queryHalSingleResult:::mainFlowStyle --> convertToHalResource
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java
+%%   convertToHalResource:::mainFlowStyle --> convertToHalTask
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/task
+%%   convertToHalTask:::mainFlowStyle --> generate
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java
+%%   convertToHalTask:::mainFlowStyle --> <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="388:1:1" line-data="      embedVariableValuesInHalTask(halTask, variableInstances);">`embedVariableValuesInHalTask`</SwmToken>
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/task
+%%   generate --> fromTaskList
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal
+%%   generate --> embed
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/task
+%%   fromTaskList --> fromTask
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal
+%%   fromTaskList --> addEmbedded
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal
+%%   embed --> addEmbedded
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java
+%%   embedVariableValuesInHalTask:::mainFlowStyle --> getVariableValuesForTask
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal
+%%   getVariableValuesForTask:::mainFlowStyle --> generateVariableValue
+%% end
+%% subgraph <SwmPath>[engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/](/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/)</SwmPath>
+%%   generateVariableValue:::mainFlowStyle --> generateTaskVariableValue
+%% end
+%% subgraph engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal
+%%   generateTaskVariableValue:::mainFlowStyle --> link
+%% end
+%%   link:::mainFlowStyle --> ...
+%% 
+%%  classDef mainFlowStyle color:#000000,fill:#7CB9F4
+%%   classDef rootsStyle color:#000000,fill:#00FFF4
 ```
 
 <SwmSnippet path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" line="178">
@@ -71,7 +123,7 @@ end
 
 # Executing the HAL single result
 
-The function `executeHalSingleResult` is the entry point of the flow. It calls the `queryHalSingleResult` function with null as an argument.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="178:5:5" line-data="  public HalResource executeHalSingleResult() {">`executeHalSingleResult`</SwmToken> is the entry point of the flow. It calls the <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="179:3:3" line-data="    return queryHalSingleResult(null);">`queryHalSingleResult`</SwmToken> function with null as an argument.
 
 ```java
   public HalResource executeHalSingleResult() {
@@ -89,7 +141,7 @@ The function `executeHalSingleResult` is the entry point of the flow. It calls t
 
 # Querying the HAL single result
 
-The function `queryHalSingleResult` executes the filter single result and checks if the entity is not null. If the entity is not null, it converts the entity to a HAL resource.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="182:5:5" line-data="  public HalResource queryHalSingleResult(String extendingQuery) {">`queryHalSingleResult`</SwmToken> executes the filter single result and checks if the entity is not null. If the entity is not null, it converts the entity to a HAL resource.
 
 ```java
   public HalResource queryHalSingleResult(String extendingQuery) {
@@ -114,7 +166,7 @@ The function `queryHalSingleResult` executes the filter single result and checks
 
 # Converting the result to a HAL resource
 
-The function `convertToHalResource` checks if the entity is of class Task. If it is, it converts the entity to a HAL task.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="375:6:6" line-data="  protected HalResource&lt;?&gt; convertToHalResource(Object entity) {">`convertToHalResource`</SwmToken> checks if the entity is of class Task. If it is, it converts the entity to a HAL task.
 
 ```java
   protected HalResource<?> convertToHalResource(Object entity) {
@@ -137,7 +189,7 @@ The function `convertToHalResource` checks if the entity is of class Task. If it
 
 # Converting the HAL resource to a HAL task
 
-The function `convertToHalTask` generates a HAL task and embeds variable values in the HAL task if variable instances are not null.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="384:5:5" line-data="  protected HalTask convertToHalTask(Task task) {">`convertToHalTask`</SwmToken> generates a HAL task and embeds variable values in the HAL task if variable instances are not null.
 
 ```java
   protected HalTask convertToHalTask(Task task) {
@@ -160,7 +212,7 @@ The function `convertToHalTask` generates a HAL task and embeds variable values 
 
 # Embedding variable values in the HAL task
 
-The function `getVariableValuesForTask` gets the variable values for the task and generates variable values for each variable instance.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/runtime/impl/FilterResourceImpl.java" pos="431:8:8" line-data="  protected List&lt;HalResource&lt;?&gt;&gt; getVariableValuesForTask(HalTask halTask, Map&lt;String, List&lt;VariableInstance&gt;&gt; variableInstances) {">`getVariableValuesForTask`</SwmToken> gets the variable values for the task and generates variable values for each variable instance.
 
 ```java
   protected List<HalResource<?>> getVariableValuesForTask(HalTask halTask, Map<String, List<VariableInstance>> variableInstances) {
@@ -196,7 +248,7 @@ The function `getVariableValuesForTask` gets the variable values for the task an
 
 # Generating variable values for the task
 
-The function `generateVariableValue` checks the scope of the variable and generates a task variable value if the scope matches with the task id.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalVariableValue.java" pos="41:7:7" line-data="  public static HalVariableValue generateVariableValue(VariableInstance variableInstance, String variableScopeId) {">`generateVariableValue`</SwmToken> checks the scope of the variable and generates a task variable value if the scope matches with the task id.
 
 ```java
   public static HalVariableValue generateVariableValue(VariableInstance variableInstance, String variableScopeId) {
@@ -231,7 +283,7 @@ The function `generateVariableValue` checks the scope of the variable and genera
 
 # Generating a task variable value
 
-The function `generateTaskVariableValue` generates a task variable value and links it to the task.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalVariableValue.java" pos="62:7:7" line-data="  public static HalVariableValue generateTaskVariableValue(VariableInstance variableInstance, String taskId) {">`generateTaskVariableValue`</SwmToken> generates a task variable value and links it to the task.
 
 ```java
   public static HalVariableValue generateTaskVariableValue(VariableInstance variableInstance, String taskId) {
@@ -250,7 +302,7 @@ The function `generateTaskVariableValue` generates a task variable value and lin
 
 # Linking the variable value
 
-The function `link` creates a link for the variable value.
+The function <SwmToken path="/engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/hal/HalVariableValue.java" pos="87:5:5" line-data="  private HalVariableValue link(HalRelation relation, String resourcePath, String resourceId, String variablesPath) {">`link`</SwmToken> creates a link for the variable value.
 
 ```java
   private HalVariableValue link(HalRelation relation, String resourcePath, String resourceId, String variablesPath) {
@@ -271,4 +323,4 @@ The function `link` creates a link for the variable value.
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda" doc-type="flows"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1jYW11bmRhJTNBJTNBZ2lsYWRuYXZvdA==" repo-name="Citi-camunda"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>
